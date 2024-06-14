@@ -27,20 +27,25 @@ const Login = () => {
         const handleSignOut=()=>{
             signOut(auth)
             .then(result=>{
+                setUsers('')
 
             })
             .catch(error=>{
+                console.log(error)
 
             })
         }
     
     return (
         <div>
+            {
+                users ? 
+            <button onClick={handleSignOut}>signOut</button> :
         <button onClick={handleGoogleSignIn}>Google login</button>
-        <button onClick={handleSignOut}>signOut</button>
+            }
 
         <h2>user name: {users.displayName}</h2>
-        <h2>user name: {users.email}</h2>
+        <h2>user email: {users.email}</h2>
         <img src={users.photoURL} alt="" />
 
     </div>
