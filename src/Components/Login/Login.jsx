@@ -1,7 +1,7 @@
 import React from 'react';
-import { getAuth, signInWithPopup } from 'firebase/auth';
+import {GoogleAuthProvider, getAuth, signInWithPopup } from 'firebase/auth';
 import app from '../../Firebase/firebase.init';
-import { GoogleAuthProvider } from 'firebase/auth/web-extension';
+
 
 const Login = () => {
     const auth =getAuth(app);
