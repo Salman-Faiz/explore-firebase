@@ -8,4 +8,8 @@
  * 5. add config file to the project
  * 6.DANGER::: DON NOT PUBLISH OR MAKE PUBLIC FIREBASE CONFIG FILE BY PUSHING CODES TO GITHUB
  * 
+ * 
+ * Integration
+ * 7. visit : docs>build >auth> web>get started
+ * 8.Export app from fireBase config?init js(export default apps)
  */
